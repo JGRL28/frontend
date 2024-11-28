@@ -1,7 +1,6 @@
 "use client";
 import { useGetCategories } from "@/api/getProducts";
 import Link from "next/link";
-import { ResponseType } from "@/types/response";
 import { CategoryType } from "@/types/category";
 
 const ChooseCategory = () => {

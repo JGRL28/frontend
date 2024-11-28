@@ -1,5 +1,5 @@
-import { Separator } from "@radix-ui/react-separator";
 import Link from "next/link";
+import { Separator } from "./separator";
 
 const dataFooter = [
   {
@@ -43,7 +43,7 @@ const Footer = () => {
             ))}
           </ul>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <Separator className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
 
         <span className="blocl text-sm text-gray-500 sm:text-center dark:text-gray-400">
           <Link href="#">Promar.</Link> Todos los derechos reservados &copy;
