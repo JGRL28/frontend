@@ -13,20 +13,20 @@ export const dataCarouselTop = [
   },
   {
     id: 2,
-    title: "Envio en 24/48 horas",
-    description: "Para todo Iquique y Alto Hospicio",
+    title: "El salmon mas fresco de todo Iquique",
+    description: "Entre 15 y 20 horas de frescura",
     link: "#",
   },
   {
     id: 3,
-    title: "Envio en 24/48 horas",
-    description: "Para todo Iquique y Alto Hospicio",
+    title: "Los precios mas competitivos",
+    description: "Cuidando el bolsillo de todos nuestros clientes",
     link: "#",
   },
   {
     id: 4,
-    title: "Envio en 24/48 horas",
-    description: "Para todo Iquique y Alto Hospicio",
+    title: "La mejor atención que tendra",
+    description: "Nos caracterizamos personalizar nuestra atención",
     link: "#",
   },
 ];
