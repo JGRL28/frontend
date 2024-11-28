@@ -14,9 +14,10 @@ import { Card, CardContent } from "./card";
 import { Expand, ShoppingCart } from "lucide-react";
 import IconButton from "./icon-button";
 import { useRouter } from "next/navigation";
+import { ResponseType } from "@/types/response";
 
 const FeaturedProducts = () => {
-  const { loading, result } = useGetFeaturedProducts();
+  const { loading, result }: ResponseType = useGetFeaturedProducts();
   const router = useRouter();
 
   return (
@@ -27,7 +28,8 @@ const FeaturedProducts = () => {
           {loading && <SkeletonSchema grid={3} />}
           {result !== null &&
             result.map((product: ProductType) => {
-              const { productName, id, imageProduct, description } = product;
+              const { productName, id, imageProduct, description, slug } =
+                product;
               return (
                 <CarouselItem
                   key={id}
