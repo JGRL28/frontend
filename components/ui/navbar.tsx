@@ -9,7 +9,7 @@ const Navbar = () => {
   const router = useRouter();
 
   return (
-    <div className="flex item-center justify-between p-4 mx-auto sm:max-w-4xl md:max-w-6xl">
+    <div className="flex item-center justify-between p-4 mx-auto sm:max-w-4xl md:max-w-6xl text-picton-blue-900 dark:text-picton-blue-200">
       <h1 className="text-3xl  cursor-pointer" onClick={() => router.push("/")}>
         PRO
         <span className="font-bold">MAR</span>

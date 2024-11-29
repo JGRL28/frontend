@@ -4,7 +4,7 @@ import { buttonVariants } from "./button";
 const BannerProduct = () => {
   return (
     <>
-      <div className="mt-4 text-center">
+      <div className="mt-4 text-center text-picton-blue-950 dark:text-picton-blue-200">
         <p>Sumérgete en un servicio único</p>
         <h4 className="mt-2 text-5xl font-extrabold uppercase">
           Los Mejores Productos

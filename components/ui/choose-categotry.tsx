@@ -25,7 +25,7 @@ const ChooseCategory = () => {
                 alt={category.categoryName}
                 className="max-w-[270px] transition duration-300 ease-in-out rounded-lg hover:scale-110"
               />
-              <p className="absolute w-full py-2 text-lg font-bold text-center text-black bottom-5 backdrop-blur-lg">
+              <p className="absolute w-full py-2 text-lg font-bold text-center text-picton-blue-950 bottom-5 backdrop-blur-lg dark:text-picton-blue-200">
                 {category.categoryName}
               </p>
             </Link>

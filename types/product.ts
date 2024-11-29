@@ -5,7 +5,7 @@ export type ProductType = {
     slug: string,
     description: string,
     isFeatured: boolean,
-    price: number,
+    priceProduct: number,
     imageProduct: {
         id: number,
         url: string,

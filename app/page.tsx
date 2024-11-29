@@ -7,7 +7,7 @@ import FeaturedProducts from "@/components/ui/featured-products";
 //
 export default function Home() {
   return (
-    <main>
+    <main className="text-picton-blue-900 dark:text-picton-blue-200">
       <CarouselTextBanner />
       <FeaturedProducts />
       <BannerDiscount />

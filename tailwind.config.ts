@@ -10,6 +10,20 @@ const config: Config = {
   theme: {
   	extend: {
   		colors: {
+			'picton-blue': {
+			'50': '#f1f9fe',
+			'100': '#e2f2fc',
+			'200': '#bfe3f8',
+			'300': '#87cef2',
+			'400': '#33ade6',
+			'500': '#209cd7',
+			'600': '#127db7',
+			'700': '#106494',
+			'800': '#11557b',
+			'900': '#144766',
+			'950': '#0d2d44',
+    		},
+    
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

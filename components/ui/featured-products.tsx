@@ -21,15 +21,21 @@ const FeaturedProducts = () => {
   const router = useRouter();
 
   return (
-    <div className="max-w-6xl py-4 mx-auto sm:py-16 sm:px-24">
+    <div className="max-w-6xl py-4 mx-auto sm:py-16 sm:px-24 text-picton-blue-900 dark:text-picton-blue-200">
       <h3 className="px-6 text-3xl sm:pb-8">Productos Destacados</h3>
       <Carousel>
         <CarouselContent className="-ml-2 md:-ml-4">
           {loading && <SkeletonSchema grid={3} />}
           {result !== null &&
             result.map((product: ProductType) => {
-              const { productName, id, imageProduct, description, slug } =
-                product;
+              const {
+                productName,
+                id,
+                imageProduct,
+                description,
+                slug,
+                priceProduct,
+              } = product;
               return (
                 <CarouselItem
                   key={id}
@@ -58,10 +64,12 @@ const FeaturedProducts = () => {
                         </div>
                       </CardContent>
                       <div className="flex justify-between gap-4 px-8">
-                        <h3 className="text-lg font-bold">{productName}</h3>
+                        <h3 className="text-lg font-bold text-picton-blue-950 dark:text-picton-blue-200">
+                          {productName}
+                        </h3>
                         <div className="flex items-center justify-between gap-3">
-                          <p className="px-2 py-1 text-white bg-black rounded-sm dark:bg-white dark:text-black w-fit">
-                            {description}
+                          <p className="px-2 py-1 text-picton-blue-200 text-lg bg-picton-blue-950 rounded-sm dark:bg-picton-blue-200 dark:text-picton-blue-950 w-fit">
+                            {priceProduct}
                           </p>
                         </div>
                       </div>
