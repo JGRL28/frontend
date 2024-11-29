@@ -28,14 +28,8 @@ const FeaturedProducts = () => {
           {loading && <SkeletonSchema grid={3} />}
           {result !== null &&
             result.map((product: ProductType) => {
-              const {
-                productName,
-                id,
-                imageProduct,
-                description,
-                slug,
-                priceProduct,
-              } = product;
+              const { productName, id, imageProduct, slug, priceProduct } =
+                product;
               return (
                 <CarouselItem
                   key={id}
@@ -43,6 +37,13 @@ const FeaturedProducts = () => {
                 >
                   <div className="p-1">
                     <Card className="py-4 border border-gray-200 shadow-none">
+                      {product.availabilityProduct === "Sin Stock" && (
+                        <div className="adsolute flex items-center justify-between gap-3 px-2 z-[1] top-4">
+                          <p className="px-2 py-1 text-s text-white bg-red-500 rounded-md dark:bg-red-500 dark:text-picton-blue-950 w-fit">
+                            {product.availabilityProduct}
+                          </p>
+                        </div>
+                      )}
                       <CardContent className="relative flex items-center justify-center px-6 py-2">
                         <img
                           src={`${process.env.NEXT_PUBLIC_BACKEND_URL}${imageProduct.url}`}

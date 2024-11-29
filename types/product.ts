@@ -1,6 +1,6 @@
 export type ProductType = {
     id: number,
-    availabilityProduct: boolean,
+    availabilityProduct: string,
     productName: string,
     slug: string,
     description: string,
