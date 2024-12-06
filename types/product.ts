@@ -6,6 +6,7 @@ export type ProductType = {
     description: string,
     isFeatured: boolean,
     priceProduct: number,
+    // quantity: number,
     imageProduct: {
         id: number,
         url: string,

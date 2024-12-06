@@ -4,7 +4,7 @@ import { buttonVariants } from "./button";
 const BannerDiscount = () => {
   return (
     <div className="p-5 sm:p-20 text-center">
-      <h2 className="uppercase font-black text-2xl text-primary">
+      <h2 className="uppercase font-picton-blue-950 text-2xl text-primary">
         Los productos mas frescos y de mejor calidad
       </h2>
       <h3>Con los mejores precios del mercado</h3>

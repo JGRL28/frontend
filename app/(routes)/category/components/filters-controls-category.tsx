@@ -1,9 +1,14 @@
 import FilterEnable from "./filters-enable";
 
-const FiltersControlsCategory = () => {
+type FiltersControlsCategoryProps = {
+  setFilterEnable: (availabilityProduct: string) => void;
+};
+
+const FiltersControlsCategory = (props: FiltersControlsCategoryProps) => {
+  const { setFilterEnable } = props;
   return (
-    <div className="sm:w-[350px] sm:mt-5">
-      <FilterEnable />
+    <div className="sm:w-[350px] sm:mt-5 p-6">
+      <FilterEnable setFilterEnable={setFilterEnable} />
     </div>
   );
 };
