@@ -4,7 +4,6 @@ import "./globals.css";
 import Navbar from "@/components/ui/navbar";
 import Footer from "@/components/ui/footer";
 import { ThemeProvider } from "@/components/ui/theme-provider";
-import { Toast } from "@/components/ui/toast";
 import { Toaster } from "@/components/ui/toaster";
 
 const urbanist = Urbanist({ subsets: ["latin"] });
