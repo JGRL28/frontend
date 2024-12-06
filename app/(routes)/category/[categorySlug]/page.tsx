@@ -25,7 +25,7 @@ export default function Page() {
           (product: ProductType) => product.availabilityProduct === filterEnable
         ));
 
-  console.log(filteredProducts);
+  console.log(router);
 
   return (
     <div className="max-w-6xl py-4 mx-auto sm:py-16 sm:px-24">

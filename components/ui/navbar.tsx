@@ -4,7 +4,6 @@ import { useRouter } from "next/navigation";
 import MenuList from "./menu-list";
 import ItemMenuMobile from "./items-menu-mobile";
 import ToggleTheme from "./toggle-theme";
-import Image from "next/image";
 import { useCart } from "@/hooks/use-cart";
 
 const Navbar = () => {

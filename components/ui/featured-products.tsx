@@ -30,8 +30,7 @@ const FeaturedProducts = () => {
           {loading && <SkeletonSchema grid={3} />}
           {result !== null &&
             result.map((product: ProductType) => {
-              const { productName, id, imageProduct, slug, priceProduct } =
-                product;
+              const { productName, id, imageProduct, slug } = product;
               return (
                 <CarouselItem
                   key={id}

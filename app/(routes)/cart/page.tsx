@@ -48,10 +48,9 @@ import { Separator } from "@/components/ui/separator";
 import { useCart } from "@/hooks/use-cart";
 import { formatPrice } from "@/lib/formatPrice";
 import CartItem from "./components/card-item";
-import { useState } from "react";
 
 export default function Page() {
-  const { items, removeAll, updateItemQuantity } = useCart();
+  const { items, updateItemQuantity } = useCart();
 
   const handleQuantityChange = (id: number, delta: number) => {
     const newQuantity =
