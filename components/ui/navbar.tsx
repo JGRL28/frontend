@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className="item-center justify-between hidden sm:flex ">
         <MenuList />
       </div>
-      <div className="flex sm:hidden">
+      <div className="flex sm:hidden z-50">
         <ItemMenuMobile />
       </div>
       <div className="flex item-center justify-between gap-2 sm:gap-7">

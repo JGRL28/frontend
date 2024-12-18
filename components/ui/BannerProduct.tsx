@@ -14,7 +14,7 @@ const BannerProduct = () => {
           Comprar
         </Link>
       </div>
-      <div className="h-[350px] bg-cover lg:h-[600px] bg-[url('/bg.png')] bg-center mt-5"></div>
+      <div className="h-[350px] bg-cover lg:h-[600px] bg-[url('/ola-bg-promar.webp')] bg-center mt-5"></div>
     </>
   );
 };

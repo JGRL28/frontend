@@ -14,13 +14,8 @@ const dataFooter = [
   },
   {
     id: 3,
-    name: "Mi cuenta",
-    link: "#",
-  },
-  {
-    id: 4,
     name: "Politica de privacidad",
-    link: "#",
+    link: "/privacy",
   },
 ];
 

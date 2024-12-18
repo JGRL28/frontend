@@ -20,39 +20,13 @@ const MenuList = () => {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Sobre Nosotros</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
-              <li className="row-span-3">
-                <NavigationMenuLink asChild>
-                  <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
-                  >
-                    {/* <Icons.logo className="h-6 w-6" /> */}
-                    <div className="mb-2 mt-4 text-lg font-medium">Promar</div>
-                    <p className="text-sm leading-tight text-muted-foreground">
-                      Tu proveedor confiable de insumos para sushi, productos
-                      congelados, abarrotes y salmón fresco de calidad.
-                    </p>
-                  </a>
-                </NavigationMenuLink>
-              </li>
-              <ListItem href="/docs" title="Haz tu pedido acá">
-                Realiza tu pedido y nosotros llevaremos tu pedido.
-              </ListItem>
-              <ListItem href="/docs/installation" title="Preparaciones">
-                Una lista de sugerencias, para ocaciones especiales.
-              </ListItem>
-              <ListItem
-                href="/docs/primitives/typography"
-                title="Productos insignia"
-              >
-                Prueba nuestros productos mas vendidos y mejor valorados.
-              </ListItem>
-            </ul>
-          </NavigationMenuContent>
+          <Link href="/docs" legacyBehavior passHref>
+            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+              Inicio
+            </NavigationMenuLink>
+          </Link>
         </NavigationMenuItem>
+
         <NavigationMenuItem>
           <NavigationMenuTrigger>Productos</NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -69,6 +43,7 @@ const MenuList = () => {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
+
         <NavigationMenuItem>
           <Link href="/docs" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
@@ -85,40 +60,22 @@ export default MenuList;
 
 const components: { title: string; href: string; description: string }[] = [
   {
-    title: "Insumos de sushi",
-    href: "/docs/primitives/alert-dialog",
+    title: "Congelados",
+    href: "/category/congelados",
     description:
-      "Insumos básicos y herramientas para sushi, como arroz, nori, pescado fresco, salsa de soya y esterillas.",
+      "Insumos congelados esenciales como kanikama, tilapia, salmón, etc.",
   },
   {
     title: "Abarrotes",
-    href: "/docs/primitives/hover-card",
+    href: "/category/abarrotes",
     description:
       "Productos esenciales de abarrotes, como arroz, aceite, harina, especias, enlatados y más.",
   },
   {
     title: "Plasticos y otros",
-    href: "/docs/primitives/progress",
+    href: "/category/plastico",
     description:
       "Variedad de plásticos y bandejas ideales para almacenar, transportar y presentar alimentos.",
-  },
-  {
-    title: "Quesos",
-    href: "/docs/primitives/scroll-area",
-    description:
-      "Quesos frescos y maduros de alta calidad, ideales para todo tipo de preparaciones.",
-  },
-  {
-    title: "Mariscos",
-    href: "/docs/primitives/tabs",
-    description:
-      "Mariscos frescos y congelados, perfectos para preparar platos de calidad.",
-  },
-  {
-    title: "Pescados",
-    href: "/docs/primitives/tooltip",
-    description:
-      "Pescados frescos y congelados, ideales para una gran variedad de recetas.",
   },
 ];
 

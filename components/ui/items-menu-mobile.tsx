@@ -5,6 +5,7 @@ import {
 } from "@radix-ui/react-popover";
 import { Menu } from "lucide-react";
 import Link from "next/link";
+import { Separator } from "./separator";
 
 const ItemMenuMobile = () => {
   return (
@@ -12,24 +13,17 @@ const ItemMenuMobile = () => {
       <PopoverTrigger>
         <Menu />
       </PopoverTrigger>
-      <PopoverContent>
-        <Link href="/categories/insumos" className="block">
-          Insumo de Sushi
-        </Link>
-        <Link href="/categories/abarrotes" className="block">
+      <PopoverContent className="bg-white w-screen text-center font-bold text-xl border-b-2">
+        <Link href="/category/abarrotes" className="block p-6">
           Abarrotes
         </Link>
-        <Link href="/categories/plasticos" className="block">
+        <Separator />
+        <Link href="/category/plastico" className="block p-6">
           Plasticos y otros
         </Link>
-        <Link href="/categories/queso" className="block">
-          Queso
-        </Link>
-        <Link href="/categories/mariscos" className="block">
-          Mariscos
-        </Link>
-        <Link href="/categories/pescados" className="block">
-          Pescados
+        <Separator />
+        <Link href="/category/congelados" className="block p-6">
+          Congelados
         </Link>
       </PopoverContent>
     </Popover>
